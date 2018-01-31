@@ -1,4 +1,5 @@
 ---
 default: -p html_report
+ci: -p json_report
 html_report: --format pretty --format html --out=logs/features.html
 json_report: --format progress --format json --out=logs/features.json
