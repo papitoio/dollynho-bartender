@@ -1,3 +1,5 @@
 node_modules/
-logs/
+logs/*.json
+logs/*.html
+logs/screenshots
 .DS_Store
