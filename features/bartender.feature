@@ -8,6 +8,7 @@ Funcionalidade: Atendimento
     Contexto:
         Dado que acessei o totem do bartenter
 
+    @smoke
     Cenario: Maior de 18 anos
 
         Quando informo meu nome "Tony" e idade "18" anos
