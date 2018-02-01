@@ -39,7 +39,7 @@ Funcionalidade: Atendimento
         Quando informo meu nome "Tony" e idade "abc" anos
         Então devo ver a mensagem "Idade deve ser númerico."
 
-    Cenario: Idade igual a zero
+    # Cenario: Idade igual a zero
 
-        Quando informo meu nome "Tony" e idade "0" anos
-        Então devo ver a mensagem "Idade não pode ser menor ou igual a zero."
+    #     Quando informo meu nome "Tony" e idade "0" anos
+    #     Então devo ver a mensagem "Idade não pode ser menor ou igual a zero."
