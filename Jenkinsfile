@@ -1,49 +1,17 @@
 pipeline {
   agent any
   stages {
-    stage('DEV') {
-      parallel {
-        stage('Build') {
-          steps {
-            echo 'Hello Build'
-          }
-        }
-        stage('Build Code') {
-          steps {
-            echo 'Build'
-          }
-        }
-        stage('Unit Tests') {
-          steps {
-            echo 'Run Unit Tests'
-          }
-        }
+    stage('Build') {
+      steps {
+        echo 'Hello Build'
+        sh 'ruby -v'
       }
     }
     stage('QA') {
-      parallel {
-        stage('QA') {
-          steps {
-            echo 'Deploy to QA'
-            echo 'Run API Tests'
-            echo 'Run UI Tests'
-          }
-        }
-        stage('Deploy') {
-          steps {
-            echo 'Deploy'
-          }
-        }
-        stage('API Tests') {
-          steps {
-            echo 'Run API Tests'
-          }
-        }
-        stage('UI Tests') {
-          steps {
-            echo 'Run Cucumber Tests'
-          }
-        }
+      steps {
+        echo 'Deploy to QA'
+        echo 'Run API Tests'
+        echo 'Run UI Tests'
       }
     }
     stage('Production') {
